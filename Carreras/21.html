@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosec.css">
+    <title>Proyecto intermodular</title>
+</head>
+
+<body>
+    <header>
+        <h1>APUNTES  <div class="imagen">
+            <img src="../img/logo.png"></img>
+        </div></h1>
+        
+    </header>
+    <div class="contenido">
+       <div class="buscador">
+             <h2>
+                Buscador de Carreras Universitarias y Ciclos Formativos de Grado Superior.
+                <select id="select" onchange="getselectedvalue();">
+                    <option value="" disabled selected>Seleccione una carrera...</option>
+                    <option value="../Index.html">Volver al inicio</option>
+                    <option value="../Carreras/1.html">Grado en Administración y dirección de empresas</option>
+                    <option value="../Carreras/2.html">Grado en Musicología</option>
+                    <option value="../Carreras/3.html">Grado en Derecho</option>
+                    <option value="../Carreras/4.html">Grado Semipresencial en Ingeniería Informática</option>
+                    <option value="../Carreras/5.html">Grado en Ciencias de la Actividad Física y del Deporte + Grado en Fisioterapia</option>
+                    <option value="../Carreras/6.html">Grado en Medicina</option>
+                    <option value="../Carreras/7.html">Doble Grado en Fisioterapia y Ciencias de la Actividad Física y del Deporte</option>
+                    <option value="../Carreras/8.html">Grado en Veterinaria</option>
+                    <option value="../Carreras/9.html">Grado en Ingeniería Informática</option>
+                    <option value="../Carreras/10.html">Doble Grado en Administración y Dirección de Empresas y Derecho</option>
+                    <option value="../Carreras/11.html">Grado Ingeniería de Sistemas de Información</option>
+                    <option value="../Carreras/12.html">Grado Ingenieria de Obras Publicas en Hidrologia y Grado Ciencias Ambientales Doble Grado</option>
+                    <option value="../Carreras/13.html">Grado Ingenieria de Sonido e Imagen</option>
+                    <option value="../Carreras/14.html">Grado en Arquitectura</option>
+                    <option value="../Carreras/15.html">Grado de Ciencias Ambientales</option>
+                    <option value="../Carreras/16.html">Grado en Ciencias de la Actividad Física y del Deporte</option>
+                    <option value="../Carreras/17.html">Grado en Odontología</option>
+                    <option value="../Carreras/18.html">Grado en Enfermería</option>
+                    <option value="../Carreras/19.html">Grado Derecho y Grado Relaciones Internacionales</option>
+                    <option value="../Carreras/20.html">Grado en Ingeniería Mecánica</option>
+                    <option value="../Carreras/22.html">Grado en Nutrición Humana y Dietética</option>
+                    <option value="../Carreras/23.html">Grado en Derecho</option>
+                    <option value="../Carreras/24.html">Grado Maestro en Educacion Infantil Mencion en Ingles</option>
+                    <option value="../Carreras/25.html">Doble Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto</option>
+                    <option value="../Carreras/26.html">Grado en Ingeniería Electrónica Industrial y Automática</option>
+                    <option value="../Carreras/27.html">Grado Administracion y Direccion de Empresas</option>
+                    <option value="../Carreras/28.html">Grado en Turismo</option>
+                    <option value="../Carreras/29.html">Doble Grado en Administración y Dirección de Empresas y Relaciones Internacionales</option>
+                    <option value="../Carreras/30.html">Grado en Dirección Comercial y Marketing</option>
+                    <option value="../Carreras/31.html">Grado en Fisioterapia</option>
+                    <option value="../Carreras/32.html">Grado Maestro en Educacion Primaria y Grado Maestro en Educacion Infantil Mencion en Ingles Doble Grado</option>
+                    <option value="../Carreras/33.html">Grado Farmacia y Grado Nutrición Humana y Dietética</option>
+                    <option value="../Carreras/34.html">Grado en Relaciones Internacionales</option>
+                    <option value="../Carreras/35.html">Doble Grado Ciencias de la Actividad Física y el Deporte y Grado Nutrición Humana y Dietética</option>
+                    <option value="../Carreras/36.html">Grado en Ingeniería Aeroespacial</option>
+                    <option value="../Carreras/37.html">Grado en Farmacia</option>
+                    <option value="../Carreras/38.html">Grado en Interpretación Musical</option>
+                    <option value="../Carreras/39.html">Grado Maestro en Educación Primaria</option>
+                    <option value="../Carreras/40.html">Curso de Técnico superior en automatización y robótica industrial</option>
+                </select>
+            </h2>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi Página Web</p>
+        <p>Contacto: infoapuntesuax@gmail.com</p>
+        <p><a href="/politica-de-privacidad">Política de Privacidad</a> | <a href="/terminos-y-condiciones">Términos y Condiciones</a></p>
+    </footer>
+    
+    <script>
+        function getselectedvalue() {
+            var selectedvalue = document.getElementById("select").value;
+            console.log(selectedvalue);
+        }
+
+        document.getElementById('select').addEventListener('change', function() {
+            console.log('Cambio de opción detectado');
+            var selectedOption = this.value;
+           
+            window.location.href = selectedOption;
+            
+        });
+     </script>
+</body>
+</html
